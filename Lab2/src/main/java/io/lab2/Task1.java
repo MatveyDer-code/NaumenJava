@@ -1,8 +1,5 @@
 package io.lab2;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -36,41 +33,29 @@ public class Task1 {
         Random random = new Random();
         long sum = 0;
 
-
         // Заполняем массив случайными числами полного диапазона int
         // Ищем сумму положительных элементов
-
         for (int i = 0; i < n; i++) {
-            array[i] = random.nextInt();
+            array[i] = random.nextInt(200001) - 100000;
             if (array[i] > 0) {
                 sum += array[i];
             }
         }
 
-        // Используем BufferedWriter для быстрой записи в консоль
-        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
+        // Используем StringBuilder для быстрой сборки строки, чтобы не вызывать print много раз
+        StringBuilder sb = new StringBuilder();
+        sb.append("Сформированный массив: [");
 
-            writer.write("Сформированный массив: [");
-
-            for (int i = 0; i < n; i++) {
-                writer.write(String.valueOf(array[i]));
-                if (i < n - 1) {
-                    writer.write(", ");
-                }
-
-                if (i % 10000 == 0) writer.flush();
+        for (int i = 0; i < n; i++) {
+            sb.append(array[i]);
+            if (i < n - 1) {
+                sb.append(", ");
             }
-
-            writer.write("]");
-            writer.newLine();
-
-            writer.write("Результат: Сумма положительных элементов = " + sum);
-            writer.newLine();
-
-            writer.flush();
-
-        } catch (IOException e) {
-            System.err.println("Ошибка при выводе данных: " + e.getMessage());
         }
+        sb.append("]");
+
+        System.out.println(sb.toString());
+
+        System.out.println("Результат: Сумма положительных элементов = " + sum);
     }
 }
