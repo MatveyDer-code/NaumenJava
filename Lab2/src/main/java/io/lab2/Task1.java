@@ -1,6 +1,6 @@
 package io.lab2;
 
-import io.lab2.util.Task;
+import io.lab2.util.CommonTask;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 /// Заполните массив (тип элементов “int”) случайными числами и
 /// выполните задание в соответствии со своим вариантом. Найти сумму положительных элементов массива.
 
-public class Task1 implements Task {
+public class Task1 implements CommonTask {
 
     public void run() {
         System.out.println("=== Задание 1: Сумма положительных элементов (Вариант 5) ===");

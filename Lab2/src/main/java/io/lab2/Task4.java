@@ -2,7 +2,7 @@ package io.lab2;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.lab2.util.Task;
+import io.lab2.util.CommonTask;
 
 import java.io.IOException;
 import java.net.URI;
@@ -17,11 +17,11 @@ import java.net.http.HttpResponse;
 /// необходимо извлечь и вывести в консоль информацию в соответствии со
 /// своим вариантом. Вывести только значение хоста сервера (поле “Host”) из
 /// заголовков (запрос выполняется по адресу “https://httpbin.org/get”).
-public class Task4 implements Task {
+public class Task4 implements CommonTask {
 
     public void run() {
 
-        System.out.println("=== Task 4: HTTP Client and JSON ===");
+        System.out.println("=== CommonTask 4: HTTP Client and JSON ===");
 
         // 1. Создаем HTTP клиент
         try (HttpClient client = HttpClient.newHttpClient()) {

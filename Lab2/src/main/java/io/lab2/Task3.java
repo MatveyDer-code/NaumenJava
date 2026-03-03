@@ -1,7 +1,7 @@
 package io.lab2;
 
 import io.lab2.util.Employee;
-import io.lab2.util.Task;
+import io.lab2.util.CommonTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 /// выполняться задание. Необходимо создать не менее 5 элементов списка.
 /// 3. Выполнить задание в соответствии с вашим вариантом.
 /// Определить, есть ли хотя бы один сотрудник с зарплатой более 100000.00.
-public class Task3 implements Task {
+public class Task3 implements CommonTask {
 
     public void run() {
         System.out.println("=== Задание 3: Stream API ===");

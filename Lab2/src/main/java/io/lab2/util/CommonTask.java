@@ -1,5 +1,5 @@
 package io.lab2.util;
 
-public interface Task {
+public interface CommonTask {
     void run();
 }
