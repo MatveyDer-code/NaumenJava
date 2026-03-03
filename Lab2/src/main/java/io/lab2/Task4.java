@@ -19,6 +19,7 @@ import java.net.http.HttpResponse;
 /// заголовков (запрос выполняется по адресу “https://httpbin.org/get”).
 public class Task4 implements CommonTask {
 
+    @Override
     public void run() {
 
         System.out.println("=== CommonTask 4: HTTP Client and JSON ===");

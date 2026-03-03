@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class Task2 implements CommonTask {
 
+    @Override
     public void run() {
         System.out.println("=== Задание 2: Сортировка вставками (Вариант 5) ===");
 

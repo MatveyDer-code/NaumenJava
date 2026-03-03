@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class Task1 implements CommonTask {
 
+    @Override
     public void run() {
         System.out.println("=== Задание 1: Сумма положительных элементов (Вариант 5) ===");
 

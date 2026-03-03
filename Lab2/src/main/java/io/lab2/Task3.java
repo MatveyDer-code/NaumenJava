@@ -14,6 +14,7 @@ import java.util.List;
 /// Определить, есть ли хотя бы один сотрудник с зарплатой более 100000.00.
 public class Task3 implements CommonTask {
 
+    @Override
     public void run() {
         System.out.println("=== Задание 3: Stream API ===");
 
