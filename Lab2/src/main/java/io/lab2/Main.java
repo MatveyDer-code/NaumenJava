@@ -10,5 +10,9 @@ public class Main {
         // Задание 2
         Task2 task2 = new Task2();
         task2.run();
+
+        // Задание 3
+        Task3 task3 = new Task3();
+        task3.run();
     }
 }

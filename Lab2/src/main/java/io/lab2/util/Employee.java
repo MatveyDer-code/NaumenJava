@@ -1,5 +1,11 @@
 package io.lab2.util;
 
+
+/// Необходимо реализовать java-класс сотрудник (код “Employee”).
+/// Приватные поля класса: ФИО (“fullName” тип “String”), Возраст (“age”
+/// тип “Integer”), Отдел (“department” тип “String”), З/П (“salary” тип
+/// “Double”). Класс должен содержать геттеры и сеттеры для доступа к
+/// полям.
 public class Employee {
 
     private String fullName;
