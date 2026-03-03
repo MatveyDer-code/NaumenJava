@@ -18,5 +18,18 @@ public class Main {
         // Задание 4
         Task4 task4 = new Task4();
         task4.run();
+
+        // Задание 5
+        Task5 scanner = new Task5("ya.ru", 0, 90);
+
+        new Thread(scanner::start).start();
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        scanner.stop();
     }
 }
