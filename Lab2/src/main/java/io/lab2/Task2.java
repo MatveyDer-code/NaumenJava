@@ -1,5 +1,7 @@
 package io.lab2;
 
+import io.lab2.util.Task;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -8,7 +10,7 @@ import java.util.Scanner;
 /// Заполните список (тип "ArrayList<Double>") случайными числами и отсортируйте его.
 /// Метод сортировки: Сортировка вставками (Insertion Sort) - вручную.
 
-public class Task2 {
+public class Task2 implements Task {
 
     public void run() {
         System.out.println("=== Задание 2: Сортировка вставками (Вариант 5) ===");
