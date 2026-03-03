@@ -1,1 +1,19 @@
+# IDE
+.idea/
+*.iml
+*.class
+
+# Build artifacts
+target/
+build/
+
+# OS
+.DS_Store
+
 test/*.txt
+.idea/
+target/
+*.iml
+*.class
+.DS_Store
+test/
