@@ -22,7 +22,7 @@ public class Task4 implements CommonTask {
     @Override
     public void run() {
 
-        System.out.println("=== CommonTask 4: HTTP Client and JSON ===");
+        System.out.println("\n=== Задание 4: HTTP Client и JSON ===");
 
         // 1. Создаем HTTP клиент
         try (HttpClient client = HttpClient.newHttpClient()) {
